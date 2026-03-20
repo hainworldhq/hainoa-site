@@ -8,6 +8,8 @@
     
     <!-- SEO 核心标签 -->
     <meta name="description" content="HAINOA is the open architecture layer within the HAIN framework - providing structured principles, architecture notes, and terminology for cloud, edge, and agentic AI-native systems.">
+    <meta name="theme-color" content="#165DFF">
+    <link rel="canonical" href="https://hainoa.org">
     <title>HAINOA - Hybrid AI Native Open Architecture</title>
     
     <!-- Open Graph 社交标签 -->
@@ -16,18 +18,18 @@
     <meta property="og:url" content="https://hainoa.org">
     <meta property="og:type" content="website">
     <!-- 移除占位 OG 图片，避免无效引用 -->
-    <meta property="og:image" content="">
+    <meta property="og:image" content="https://hainworld.com/og-image.png">
     
     <!-- Twitter 卡片标签 -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="HAINOA - Hybrid AI Native Open Architecture">
     <meta name="twitter:description" content="The open architecture layer within the HAIN framework for cloud, edge, and agentic AI-native systems.">
     <!-- 移除占位 Twitter 图片，避免无效引用 -->
-    <meta name="twitter:image" content="">
+    <meta name="twitter:image" content="https://hainworld.com/og-image.png">
     
     <!-- Favicon - 移除占位引用，避免 404 -->
-    <link rel="icon" href="" type="image/x-icon">
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="icon" href="https://hainworld.com/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://hainworld.com/favicon.ico" type="image/x-icon">
     
     <!-- 外部资源 -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -93,11 +95,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-sans text-dark bg-white">
+<body id="top" class="font-sans text-dark bg-white">
     <!-- 导航栏 - 更克制的设计 -->
     <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-light">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-primary">HAINOA</a>
+            <a href="#top" class="text-2xl font-bold text-primary">HAINOA</a>
             <div class="hidden md:flex space-x-8">
                 <a href="#overview" class="text-dark/80 hover:text-primary transition-colors">Overview</a>
                 <a href="#principles" class="text-dark/80 hover:text-primary transition-colors">Principles</a>
@@ -105,7 +107,7 @@
                 <a href="#entry" class="text-dark/80 hover:text-primary transition-colors">Entry Points</a>
             </div>
             <div class="md:hidden">
-                <button id="mobileMenuBtn" class="text-dark hover:text-primary" aria-label="Toggle mobile menu">
+                <button id="mobileMenuBtn" class="text-dark hover:text-primary" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileMenu">
                     <i class="fa fa-bars text-xl"></i>
                 </button>
             </div>
@@ -127,7 +129,7 @@
             <h1 class="text-[clamp(2.5rem,6vw,4rem)] font-bold text-dark mb-6 leading-tight">HAINOA</h1>
             <p class="text-[clamp(1.25rem,3vw,1.75rem)] text-dark/80 mb-8 text-balance">Hybrid AI Native Open Architecture</p>
             <p class="text-lg text-dark/70 mb-10 max-w-3xl mx-auto text-balance">
-                HAINOA is the open architecture layer within the HAIN framework — providing structured principles, architecture notes, and reference direction for cloud, edge, and agentic AI-native systems.
+                <a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/hainoa.md" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">HAINOA</a> is the <a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/open-architecture-layer.md" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">open architecture layer</a> within the <a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/hain.md" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">HAIN</a> framework — providing structured principles, architecture notes, and reference direction for <a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/cloud.md" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">cloud</a>, <a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/edge.md" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">edge</a>, and <a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/agentic-systems.md" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">agentic AI-native systems</a>.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#principles" class="px-8 py-3 bg-primary text-white rounded-lg font-medium hover:bg-primary/90 transition-colors">
@@ -164,7 +166,7 @@
                         AI-native systems are becoming more distributed, more composable, and more environment-aware. As systems expand across centralized cloud services, local edge runtimes, and agentic workflows, the challenge is no longer just model access. The challenge is structure.
                     </p>
                     <p class="text-lg text-dark/80 mb-6">
-                        An open architecture layer helps define how these components relate to one another without forcing everything into a single product stack. It creates room for shared language, cleaner layering, and a more consistent way to describe system roles, boundaries, and evolution.
+                        An <a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/open-architecture-layer.md" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">open architecture layer</a> helps define how these components relate to one another without forcing everything into a single product stack. It creates room for shared language, cleaner layering, and a more consistent way to describe system roles, boundaries, and evolution.
                     </p>
                     <p class="text-lg text-dark/80 font-medium">
                         HAINOA is meant to support that role: not as a fixed standard, but as a structured architectural proposition.
@@ -198,7 +200,7 @@
                 
                 <!-- 原则 3 -->
                 <div class="hain-card bg-white p-8 rounded-xl shadow-sm border border-light/50 principle-card">
-                    <h3 class="text-xl font-semibold text-primary mb-4">Cloud, edge, and agency are connected layers</h3>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Cloud, edge, and agentic systems are connected layers</h3>
                     <p class="text-dark/70">
                         These are not isolated tracks. They increasingly form one connected landscape of intelligent execution.
                     </p>
@@ -227,7 +229,7 @@
                 <!-- Cloud -->
                 <div class="bg-white p-8 rounded-xl shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
                     <div class="text-primary text-3xl mb-4"><i class="fa fa-cloud"></i></div>
-                    <h3 class="text-xl font-semibold mb-4">Cloud</h3>
+                    <h3 class="text-xl font-semibold mb-4"><a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/cloud.md" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">Cloud</a></h3>
                     <p class="text-dark/70">
                         Shared intelligence, centralized coordination, scalable infrastructure, and system-wide orchestration.
                     </p>
@@ -236,7 +238,7 @@
                 <!-- Edge -->
                 <div class="bg-white p-8 rounded-xl shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
                     <div class="text-primary text-3xl mb-4"><i class="fa fa-server"></i></div>
-                    <h3 class="text-xl font-semibold mb-4">Edge</h3>
+                    <h3 class="text-xl font-semibold mb-4"><a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/edge.md" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">Edge</a></h3>
                     <p class="text-dark/70">
                         Local execution, lower latency, deployment realism, and environment-aware intelligence closer to the point of use.
                     </p>
@@ -245,7 +247,7 @@
                 <!-- Agentic Systems -->
                 <div class="bg-white p-8 rounded-xl shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
                     <div class="text-primary text-3xl mb-4"><i class="fa fa-cogs"></i></div>
-                    <h3 class="text-xl font-semibold mb-4">Agentic Systems</h3>
+                    <h3 class="text-xl font-semibold mb-4"><a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/agentic-systems.md" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">Agentic Systems</a></h3>
                     <p class="text-dark/70">
                         Tool use, workflow coordination, memory, delegation, and decision flows across distributed execution contexts.
                     </p>
@@ -266,7 +268,7 @@
                     <!-- HAIN World -->
                     <div class="border border-light rounded-xl p-8 hover:shadow-md transition-shadow bg-white">
                         <div class="text-primary text-xl mb-4"><i class="fa fa-globe"></i></div>
-                        <h4 class="text-lg font-semibold text-primary mb-3">HAIN World</h4>
+                        <h4 class="text-lg font-semibold text-primary mb-3"><a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/hain-world.md" target="_blank" rel="noopener noreferrer" class="hover:underline">HAIN World</a></h4>
                         <p class="text-dark/70 text-sm">
                             Public-facing identity and narrative entry point for the Hybrid AI Native concept.
                         </p>
@@ -275,7 +277,7 @@
                     <!-- HAINOA -->
                     <div class="border-2 border-primary rounded-xl p-8 shadow-md bg-white hain-card transform -translate-y-4">
                         <div class="text-primary text-xl mb-4"><i class="fa fa-sitemap"></i></div>
-                        <h4 class="text-lg font-bold text-primary mb-3">HAINOA</h4>
+                        <h4 class="text-lg font-bold text-primary mb-3"><a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/hainoa.md" target="_blank" rel="noopener noreferrer" class="hover:underline">HAINOA</a></h4>
                         <p class="text-dark/80 text-sm">
                             Open architecture layer where the framework becomes more explicit, structured, and interpretable.
                         </p>
@@ -284,7 +286,7 @@
                     <!-- HAINIZE -->
                     <div class="border border-light rounded-xl p-8 hover:shadow-md transition-shadow bg-white">
                         <div class="text-primary text-xl mb-4"><i class="fa fa-wrench"></i></div>
-                        <h4 class="text-lg font-semibold text-primary mb-3">HAINIZE</h4>
+                        <h4 class="text-lg font-semibold text-primary mb-3"><a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/hainize.md" target="_blank" rel="noopener noreferrer" class="hover:underline">HAINIZE</a></h4>
                         <p class="text-dark/70 text-sm">
                             Toolkit and developer-oriented direction for templates, starter assets, and practical entry points.
                         </p>
@@ -302,7 +304,7 @@
                 Explore the framework through its public, architectural, and project-facing layers.
             </p>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
                 <!-- HAIN World -->
                 <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                     <div class="text-primary text-3xl mb-4">
@@ -344,14 +346,38 @@
                         View LinkedIn <i class="fa fa-arrow-right ml-1"></i>
                     </a>
                 </div>
+
+                <!-- Glossary -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-primary text-3xl mb-4">
+                        <i class="fa fa-book"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Glossary</h3>
+                    <p class="text-dark/70 mb-4">
+                        Browse core terms and working definitions for the HAIN framework.
+                    </p>
+                    <a href="https://github.com/hainworldhq/hain-glossary" target="_blank" rel="noopener noreferrer" class="text-primary font-medium hover:underline inline-flex items-center">
+                        Browse Glossary <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-light rounded-xl border border-primary/10 p-5 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                <div>
+                    <h3 class="text-lg font-semibold text-dark mb-1">White Paper</h3>
+                    <p class="text-dark/70">Read the broader HAIN narrative through the current white paper draft.</p>
+                </div>
+                <a href="https://hainworld.com/whitepaper.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-primary font-medium hover:underline">
+                    Open White Paper <i class="fa fa-arrow-right ml-1"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer - 优化体系化表述 -->
+    <!-- Footer -->
     <footer class="bg-dark text-white py-12 px-4 sm:px-6 lg:px-8">
         <div class="container mx-auto max-w-5xl">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <div>
                     <h3 class="text-2xl font-bold mb-4">HAINOA</h3>
                     <p class="text-white/70 mb-6">
@@ -366,9 +392,18 @@
                         <li><a href="https://hain.world" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">hain.world</a></li>
                     </ul>
                 </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2 text-white/70">
+                        <li><a href="https://github.com/hainworldhq" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">GitHub</a></li>
+                        <li><a href="https://github.com/hainworldhq/hain-glossary" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Glossary</a></li>
+                        <li><a href="https://hainworld.com/whitepaper.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">White Paper</a></li>
+                        <li><a href="https://linkedin.com/company/hainworld" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">LinkedIn</a></li>
+                        <li><a href="mailto:hello@hainworld.com" class="hover:text-white transition-colors">hello@hainworld.com</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="border-t border-white/10 pt-8 text-center text-white/50 text-sm">
-                <!-- 优化 Footer 归属表述，强调体系化 -->
                 <p>Part of the HAIN framework. All rights reserved.</p>
             </div>
         </div>
@@ -386,6 +421,8 @@
         
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+            const expanded = !mobileMenu.classList.contains('hidden');
+            mobileMenuBtn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
         });
 
         // 回到顶部按钮逻辑
